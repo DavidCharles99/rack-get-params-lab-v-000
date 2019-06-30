@@ -21,9 +21,13 @@ class Application
         end
       end
 
+
+
     elsif req.path.match(/search/)
       search_term = req.params["q"]
       resp.write handle_search(search_term)
+    elsif req.path.match(/add/)
+
     else
       resp.write "Path Not Found"
     end
