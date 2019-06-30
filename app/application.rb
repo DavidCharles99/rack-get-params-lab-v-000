@@ -41,6 +41,7 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+  
   def handle_add(add_item)
     if @@items.include?(add_item)
       @@cart << add_item
